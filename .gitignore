@@ -1,0 +1,5 @@
+CLAUDE.md
+human-aligned-brand/
+*.code-workspace
+.DS_Store
+.claude/

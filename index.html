@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Human Aligned</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="brand/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="brand/apple-touch-icon.png">
+<meta name="theme-color" content="#12161C">
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <!-- Logo: brand/lockup-horizontal-no-tagline.svg inlined so the wordmark uses the page's Instrument Sans and follows the theme. Never redraw the mark. -->
+    <a class="brand" href="#top" aria-label="Human Aligned home">
+      <svg viewBox="0 0 480 100" aria-hidden="true" focusable="false"><line class="stem" x1="22" y1="14" x2="22" y2="86" stroke-width="12"/><line class="stem" x1="78" y1="14" x2="78" y2="86" stroke-width="12"/><rect class="bar-mark" x="28" y="44" width="44" height="12"/><text x="122" y="66" font-weight="600" font-size="50" letter-spacing="-1.5">Human Aligned</text></svg>
+    </a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a><a href="#offers">Offers</a><a href="#methods">Methods</a><a href="#process">Process</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="top">
+    <div class="hero-copy">
+      <span class="eyebrow">Human-centered AI alignment research</span>
+      <h1>Is your AI aligned <em>with your users?</em></h1>
+      <p class="lede">Your model passes its evals, but adoption stalls, users don't trust the answers, and nobody can say why. Benchmarks can't tell you whether users will trust, adopt or pay for your AI.</p>
+      <p class="lede">That's where we come in. We put your AI in front of real users, pinpoint where it falls short, and turn what we learn into criteria your team can test against every release, so you ship AI that users actually adopt.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Book a scoping call</a>
+        <a class="btn btn-ghost" href="#services">See services</a>
+      </div>
+    </div>
+    <form id="quick" class="quick" novalidate aria-labelledby="quick-title">
+      <div class="quick-head">
+        <h3 id="quick-title">Quick question?</h3>
+        <p>Tell us what you're building. We reply within two business days.</p>
+      </div>
+      <div class="field"><label for="q-name">Name</label><input id="q-name" name="name" autocomplete="name" required><span class="err" id="qe-name"></span></div>
+      <div class="field"><label for="q-email">Work email</label><input id="q-email" name="email" type="email" autocomplete="email" required><span class="err" id="qe-email"></span></div>
+      <div class="field"><label for="q-msg">What are you building?</label><textarea id="q-msg" name="message" rows="3" required></textarea><span class="err" id="qe-msg"></span></div>
+      <div class="form-foot">
+        <small>No mailing lists.</small>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+
+
+  <section id="services">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>Human feedback at every stage of the AI product lifecycle</h2>
+      <p class="lede">Bring us in at the stage you're in now, or across the whole cycle.</p>
+    </div>
+    <ol class="lifecycle">
+      <li class="stage">
+        <span class="stage-node" aria-hidden="true">01</span>
+        <div class="stage-card">
+          <h3>Discovery</h3>
+          <p class="stage-goal">Stop building AI where users don't want it. Most failed AI features fail here, not in the model.</p>
+          <ul>
+            <li>Find where AI actually helps your users' work, and where it should stay out</li>
+            <li>Learn how users already use AI tools today, and the bar you're competing against</li>
+            <li>Decide which tasks AI should suggest, draft, act on with approval, or do alone</li>
+          </ul>
+          <button class="btn btn-ghost" type="button" data-offer="Discovery">Ask about this</button>
+        </div>
+      </li>
+      <li class="stage">
+        <span class="stage-node" aria-hidden="true">02</span>
+        <div class="stage-card">
+          <h3>Model design</h3>
+          <p class="stage-goal">Test the AI's behavior before engineers build it. Changing a response spec costs hours here; changing a shipped model costs a release.</p>
+          <ul>
+            <li>Validate the concept, tone and answer format before any model work</li>
+            <li>Find the response length, structure and voice users prefer and trust</li>
+            <li>Design how users recover when the AI is wrong, slow or refuses</li>
+            <li>Audit the design against established human-AI guidelines</li>
+          </ul>
+          <button class="btn btn-ghost" type="button" data-offer="Model design">Ask about this</button>
+        </div>
+      </li>
+      <li class="stage">
+        <span class="stage-node" aria-hidden="true">03</span>
+        <div class="stage-card">
+          <h3>Testing</h3>
+          <p class="stage-goal">Connect what users experience to the evals your engineering team already runs.</p>
+          <ul>
+            <li>See how real users phrase what they want, and what they do when output misses</li>
+            <li>Build eval sets from what a great answer looks like to your users</li>
+            <li>Find where your automated judge disagrees with users</li>
+            <li>Test whether users catch the AI's mistakes, or accept them</li>
+            <li>Make sure users can supervise, stop and undo an agent</li>
+          </ul>
+          <button class="btn btn-ghost" type="button" data-offer="Testing">Ask about this</button>
+        </div>
+      </li>
+      <li class="stage">
+        <span class="stage-node" aria-hidden="true">04</span>
+        <div class="stage-card">
+          <h3>Production</h3>
+          <p class="stage-goal">Explain what dashboards can't: why usage rises, plateaus or collapses after the novelty wears off.</p>
+          <ul>
+            <li>Track how trust, reliance and habits change over 30–90 days</li>
+            <li>Mine real conversations for failure patterns, at scale</li>
+            <li>Learn why users stopped, ranked by cause</li>
+            <li>Find what users forget after time away, and what the product must re-teach</li>
+          </ul>
+          <button class="btn btn-ghost" type="button" data-offer="Production">Ask about this</button>
+        </div>
+      </li>
+    </ol>
+    <div class="track">
+      <div class="track-head">
+        <span class="eyebrow">Across every stage</span>
+        <h3>Trust, safety &amp; alignment</h3>
+        <p>Research on whether your AI behaves the way users need it to, not only whether it's usable. It maps to the Map and Measure functions of the NIST AI Risk Management Framework, which helps teams with compliance needs plan for it.</p>
+      </div>
+      <ul>
+        <li>Surface the harms real users find that expert red teams miss</li>
+        <li>Check whether your AI tells users what they want to hear, or what is true</li>
+        <li>Make refusals and safety messages feel fair, clear and recoverable</li>
+      </ul>
+      <button class="btn btn-ghost" type="button" data-offer="Trust &amp; Safety Review">Ask about this</button>
+    </div>
+  </section>
+
+  <section id="offers">
+    <div class="sec-head">
+      <span class="eyebrow">Offers</span>
+      <h2>Fixed-scope offers, built around the question you need answered</h2>
+      <p class="lede">Each offer bundles the methods that answer one question. Start with a two-week Health Check, or go straight to the stage you're in. You keep every rubric, eval set and taxonomy we build, so the work stays in your pipeline after we leave.</p>
+    </div>
+    <!-- PLACEHOLDER: offer lengths are typical estimates from the methods playbook -->
+    <ol class="offer-rows">
+        <li class="offer-row">
+          <div class="offer-name"><h3>AI UX Health Check</h3><span class="chip">2 weeks</span></div>
+          <div class="offer-what"><p>A fast expert audit of your AI feature against established human-AI guidelines, plus live sessions with real users.</p><p class="offer-inc"><small>Includes</small>Human-AI heuristic audit · Live prompting + think-aloud sessions</p></div>
+          <div class="offer-best"><small>Best for</small>Teams with a live AI feature and a hunch it underperforms</div>
+          <div class="offer-cta"><button class="btn btn-ghost" type="button" data-offer="AI UX Health Check">Ask about this</button></div>
+        </li>
+        <li class="offer-row">
+          <div class="offer-name"><h3>Concept Sprint</h3><span class="chip">4–6 weeks</span></div>
+          <div class="offer-what"><p>Validate the concept, tone and answer format with users before any model work.</p><p class="offer-inc"><small>Includes</small>AI opportunity mapping or delegation boundary workshop · Wizard of Oz testing · Output exemplar testing</p></div>
+          <div class="offer-best"><small>Best for</small>Product leads with an AI idea still on slides</div>
+          <div class="offer-cta"><button class="btn btn-ghost" type="button" data-offer="Concept Sprint">Ask about this</button></div>
+        </li>
+        <li class="offer-row">
+          <div class="offer-name"><h3>Eval Partnership</h3><span class="chip">6–8 weeks</span></div>
+          <div class="offer-what"><p>Ground your evals in what users actually value, and find where your automated judge disagrees with them.</p><p class="offer-inc"><small>Includes</small>Golden-set co-creation · Human consensus rubrics vs. LLM-as-judge · Appropriate-reliance testing</p></div>
+          <div class="offer-best"><small>Best for</small>AI and eval teams shipping on LLM-judge scores</div>
+          <div class="offer-cta"><button class="btn btn-ghost" type="button" data-offer="Eval Partnership">Ask about this</button></div>
+        </li>
+        <li class="offer-row">
+          <div class="offer-name"><h3>Agent Readiness Review</h3><span class="chip">4–5 weeks</span></div>
+          <div class="offer-what"><p>Decide what your agent may do alone, and make sure users can supervise, stop and undo it.</p><p class="offer-inc"><small>Includes</small>Delegation boundary workshop · Failure-mode storyboarding · Agent oversight &amp; handoff testing</p></div>
+          <div class="offer-best"><small>Best for</small>Teams about to give an agent real permissions</div>
+          <div class="offer-cta"><button class="btn btn-ghost" type="button" data-offer="Agent Readiness Review">Ask about this</button></div>
+        </li>
+        <li class="offer-row">
+          <div class="offer-name"><h3>Adoption Tracker</h3><span class="chip">90 days</span></div>
+          <div class="offer-what"><p>Follow how trust and use change after launch, and find out why users drift away.</p><p class="offer-inc"><small>Includes</small>Longitudinal diary study · Conversation log mining + intercepts · Abandonment interviews</p></div>
+          <div class="offer-best"><small>Best for</small>Teams at beta or launch</div>
+          <div class="offer-cta"><button class="btn btn-ghost" type="button" data-offer="Adoption Tracker">Ask about this</button></div>
+        </li>
+        <li class="offer-row">
+          <div class="offer-name"><h3>Trust &amp; Safety Review</h3><span class="chip">3–4 weeks</span></div>
+          <div class="offer-what"><p>Find the harms, sycophancy and refusal problems that matter to your users.</p><p class="offer-inc"><small>Includes</small>Participatory red teaming · Sycophancy &amp; values probes · Refusal &amp; guardrail experience testing</p></div>
+          <div class="offer-best"><small>Best for</small>Regulated or high-stakes products</div>
+          <div class="offer-cta"><button class="btn btn-ghost" type="button" data-offer="Trust &amp; Safety Review">Ask about this</button></div>
+        </li>
+    </ol>
+  </section>
+
+  <section id="methods">
+    <div class="sec-head">
+      <span class="eyebrow">Methods</span>
+      <h2>19 research methods across the AI product lifecycle</h2>
+      <p class="lede">Every method answers one question your team will act on. Lengths are typical field time for one study, not counting recruiting.</p>
+    </div>
+      <details class="method-group" open>
+        <summary><span class="step-num">01</span><span class="mg-title"><b>Discovery</b><span>Stop building AI where users don't want it. Most failed AI features fail here, not in the model.</span></span><span class="mg-count">3 methods</span></summary>
+        <ol class="method-rows">
+          <li class="method-row">
+            <div class="method-name"><h4>AI opportunity mapping</h4><span class="chip">2–3 weeks</span></div>
+            <p class="method-q">Where does AI actually help this job, and where should it stay out?</p>
+            <div class="method-meta"><small>Best time</small>Before your roadmap commits to an AI feature</div>
+            <div class="method-meta"><small>You get</small>An opportunity map and delegation matrix</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Shadow-AI &amp; mental-model interviews</h4><span class="chip">2–3 weeks</span></div>
+            <p class="method-q">How do your users already use ChatGPT, Claude, Copilot and other tools for this job, and what do they believe AI can do?</p>
+            <div class="method-meta"><small>Best time</small>When you need to know the bar you're competing against</div>
+            <div class="method-meta"><small>You get</small>A mental-model map and workaround inventory</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Delegation boundary workshop</h4><span class="chip">1 week</span></div>
+            <p class="method-q">For each task, should AI suggest, draft, act with approval, or act alone?</p>
+            <div class="method-meta"><small>Best time</small>Before designing an agent or automation</div>
+            <div class="method-meta"><small>You get</small>An autonomy ladder for each task</div>
+          </li>
+        </ol>
+      </details>
+      <details class="method-group">
+        <summary><span class="step-num">02</span><span class="mg-title"><b>Model design</b><span>Test the AI's behavior before engineers build it. Changing a response spec costs hours here; changing a shipped model costs a release.</span></span><span class="mg-count">4 methods</span></summary>
+        <ol class="method-rows">
+          <li class="method-row">
+            <div class="method-name"><h4>Wizard of Oz testing</h4><span class="chip">2–4 weeks</span></div>
+            <p class="method-q">Do the concept, tone and answer format work for users, before any model work?</p>
+            <div class="method-meta"><small>Best time</small>For any new assistant, agent or AI feature still on slides</div>
+            <div class="method-meta"><small>You get</small>A validated response spec and annotated transcripts</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Output exemplar testing</h4><span class="chip">1–2 weeks</span></div>
+            <p class="method-q">Which response length, structure, voice and citation style do users prefer and trust?</p>
+            <div class="method-meta"><small>Best time</small>When writing system prompts or a style guide</div>
+            <div class="method-meta"><small>You get</small>An evidence-backed response style guide</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Failure-mode storyboarding</h4><span class="chip">1–2 weeks</span></div>
+            <p class="method-q">How do users react when the AI is wrong, slow or refuses, and what helps them recover?</p>
+            <div class="method-meta"><small>Best time</small>Before launch planning</div>
+            <div class="method-meta"><small>You get</small>Error and recovery patterns</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Human-AI heuristic audit</h4><span class="chip">1 week</span></div>
+            <p class="method-q">Where does the design break established human-AI guidelines?</p>
+            <div class="method-meta"><small>Best time</small>When you want a fast, low-cost first look</div>
+            <div class="method-meta"><small>You get</small>A scored audit and prioritized fix list</div>
+          </li>
+        </ol>
+      </details>
+      <details class="method-group">
+        <summary><span class="step-num">03</span><span class="mg-title"><b>Testing</b><span>Connect what users experience to the evals your engineering team already runs.</span></span><span class="mg-count">5 methods</span></summary>
+        <ol class="method-rows">
+          <li class="method-row">
+            <div class="method-name"><h4>Scenario-based live prompting + think-aloud</h4><span class="chip">2–3 weeks</span></div>
+            <p class="method-q">How do real users phrase what they want, how does their intent shift mid-session, and what do they do when output misses?</p>
+            <div class="method-meta"><small>Best time</small>Once a working build exists</div>
+            <div class="method-meta"><small>You get</small>Intent-shift journeys and a vocabulary of real prompts</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Golden-set co-creation</h4><span class="chip">2–4 weeks</span></div>
+            <p class="method-q">What does a great answer look like to the users who rely on it?</p>
+            <div class="method-meta"><small>Best time</small>When your eval set was written by engineers</div>
+            <div class="method-meta"><small>You get</small>A user- and expert-authored eval set you can run on every build</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Human consensus rubrics vs. LLM-as-judge</h4><span class="chip">3–4 weeks</span></div>
+            <p class="method-q">Where does your automated judge call an output good when users find it robotic or unhelpful?</p>
+            <div class="method-meta"><small>Best time</small>When your team ships on LLM-judge scores</div>
+            <div class="method-meta"><small>You get</small>A calibrated rubric and a human–judge gap report</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Appropriate-reliance testing</h4><span class="chip">2–3 weeks</span></div>
+            <p class="method-q">Do users catch the AI's mistakes, or accept them?</p>
+            <div class="method-meta"><small>Best time</small>When a wrong answer costs money, health or reputation</div>
+            <div class="method-meta"><small>You get</small>Reliance scores and design changes that improve them</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Agent oversight &amp; handoff testing</h4><span class="chip">2–3 weeks</span></div>
+            <p class="method-q">Can users see what an agent is doing, stop it, approve key steps and undo mistakes?</p>
+            <div class="method-meta"><small>Best time</small>Before giving an agent write access to anything</div>
+            <div class="method-meta"><small>You get</small>Control-point recommendations</div>
+          </li>
+        </ol>
+      </details>
+      <details class="method-group">
+        <summary><span class="step-num">04</span><span class="mg-title"><b>Production</b><span>Explain what dashboards can't: why usage rises, plateaus or collapses after the novelty wears off.</span></span><span class="mg-count">4 methods</span></summary>
+        <ol class="method-rows">
+          <li class="method-row">
+            <div class="method-name"><h4>Longitudinal diary study</h4><span class="chip">5–13 weeks</span></div>
+            <p class="method-q">How do trust, reliance and habits change over 30–90 days, and what makes users drift away?</p>
+            <div class="method-meta"><small>Best time</small>At beta or launch</div>
+            <div class="method-meta"><small>You get</small>An adoption curve by phase and the triggers that move users between phases</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Conversation log mining + intercepts</h4><span class="chip">2–4 weeks</span></div>
+            <p class="method-q">What do real sessions reveal about failure, at scale?</p>
+            <div class="method-meta"><small>Best time</small>Once there's live traffic</div>
+            <div class="method-meta"><small>You get</small>A failure taxonomy grounded in real data, with frequencies</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Abandonment interviews</h4><span class="chip">2 weeks</span></div>
+            <p class="method-q">Why did users stop?</p>
+            <div class="method-meta"><small>Best time</small>When retention drops after week 2–4</div>
+            <div class="method-meta"><small>You get</small>Ranked churn drivers</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Month-away re-entry study</h4><span class="chip">1–2 weeks</span></div>
+            <p class="method-q">What do users forget, and what must the product re-teach?</p>
+            <div class="method-meta"><small>Best time</small>After a major model or feature change</div>
+            <div class="method-meta"><small>You get</small>Re-onboarding needs</div>
+          </li>
+        </ol>
+      </details>
+      <details class="method-group">
+        <summary><span class="step-num">&#8734;</span><span class="mg-title"><b>Trust, safety &amp; alignment</b><span>Runs at any stage: research on whether your AI behaves the way users need it to.</span></span><span class="mg-count">3 methods</span></summary>
+        <ol class="method-rows">
+          <li class="method-row">
+            <div class="method-name"><h4>Participatory red teaming</h4><span class="chip">2–3 weeks</span></div>
+            <p class="method-q">What harms do real users, including vulnerable and underrepresented groups, find that expert red teams miss?</p>
+            <div class="method-meta"><small>Best time</small>Before launch and after major model changes</div>
+            <div class="method-meta"><small>You get</small>A harm inventory with the lived context behind each item</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Sycophancy &amp; values probes</h4><span class="chip">2–3 weeks</span></div>
+            <p class="method-q">Does the AI agree with users when it shouldn't, or drift from the values it's meant to hold?</p>
+            <div class="method-meta"><small>Best time</small>For advice, health, finance, education or companion products</div>
+            <div class="method-meta"><small>You get</small>An alignment gap report</div>
+          </li>
+          <li class="method-row">
+            <div class="method-name"><h4>Refusal &amp; guardrail experience testing</h4><span class="chip">1–2 weeks</span></div>
+            <p class="method-q">Do refusals and safety messages feel fair, clear and recoverable, or preachy and blocking?</p>
+            <div class="method-meta"><small>Best time</small>When users say the AI is "too restrictive"</div>
+            <div class="method-meta"><small>You get</small>Refusal UX patterns</div>
+          </li>
+        </ol>
+      </details>
+  </section>
+
+  <section id="process">
+    <div class="sec-head">
+      <span class="eyebrow">Process</span>
+      <h2>From first call to findings in weeks, not quarters</h2>
+    </div>
+
+    <div class="block">
+      <h3 class="block-title">Four steps, every engagement</h3>
+      <!-- PLACEHOLDER: phase labels and time commitments below are estimates; offer lengths run 2 weeks to 90 days -->
+      <ol class="step-rows">
+        <li class="step-row">
+          <div class="step-when"><span class="step-num">01</span><span class="chip">Before kickoff</span></div>
+          <div class="step-what"><h4>Scope</h4><p>A 30-minute call to pin down the decision you need to make, who your users are, and what "good" should mean for your AI.</p></div>
+          <div class="step-meta"><small>What you get</small>A one-page study plan with scope, timeline and price</div>
+          <div class="step-meta"><small>Your team's time</small>30-minute call, plus about an hour to review the plan</div>
+        </li>
+        <li class="step-row">
+          <div class="step-when"><span class="step-num">02</span><span class="chip">Fieldwork</span></div>
+          <div class="step-what"><h4>Conduct research</h4><p>We recruit from your real user segments, run sessions against your live product or prototype, and share early signals every week.</p></div>
+          <div class="step-meta"><small>What you get</small>Weekly readouts with clips and emerging themes</div>
+          <div class="step-meta"><small>Your team's time</small>30 minutes a week for the readout</div>
+        </li>
+        <li class="step-row">
+          <div class="step-when"><span class="step-num">03</span><span class="chip">Final week</span></div>
+          <div class="step-what"><h4>Translate</h4><p>We turn findings into artifacts your AI team can build on, not just a slide deck.</p></div>
+          <div class="step-meta"><small>What you get</small>Eval criteria, scoring rubrics, labeled examples and benchmark baselines</div>
+          <div class="step-meta"><small>Your team's time</small>About 2 hours with your engineers to fit them into your eval stack</div>
+        </li>
+        <li class="step-row">
+          <div class="step-when"><span class="step-num">04</span><span class="chip">Wrap-up</span></div>
+          <div class="step-what"><h4>Decide &amp; repeat</h4><p>A working session to prioritize what to fix and choose the next test, or keep us on for an ongoing cadence.</p></div>
+          <div class="step-meta"><small>What you get</small>Prioritized findings and a plan for the next round</div>
+          <div class="step-meta"><small>Your team's time</small>One 90-minute working session</div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <div class="promises">
+        <h3 class="block-title">How we work with you</h3>
+        <ul>
+          <li><b>Your real users</b><span>We recruit from your actual user segments, not convenience panels.</span></li>
+          <li><b>Rigor that fits the decision</b><span>Methods matched to the question, from interviews to longitudinal and quantitative studies.</span></li>
+          <li><b>Confidential by default</b><span>NDAs, secure data handling, and access only to what the study needs.</span></li>
+          <li><b>Signal every week</b><span>Weekly readouts, so you never wait on a final report to act.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="block-title">Two ways to work together</h3>
+      <div class="engage-grid">
+        <article class="engage">
+          <div class="engage-top"><h4>Fixed-scope offer</h4><span class="chip">2 weeks – 90 days</span></div>
+          <p>One of the six offers above, scoped to the stage you're in and the question you need answered.</p>
+          <p class="best"><small>Best for</small>A specific launch, decision or open question</p>
+        </article>
+        <article class="engage">
+          <div class="engage-top"><h4>Embedded</h4><span class="chip">Ongoing, monthly</span></div>
+          <p>A research partner on your release cadence, running whichever methods each model update needs.</p>
+          <p class="best"><small>Best for</small>Teams shipping model updates every few weeks</p>
+        </article>
+      </div>
+      <div class="cta-row engage-cta"><a class="btn btn-primary" href="#contact">Book a scoping call</a></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="founder">
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow">About</span>
+        <h2>A research team that moves as fast as your product team</h2>
+      </div>
+      <div class="founder-body">
+        <p>Human Aligned is led by world-class technology researchers with a passion for building user-centered AI solutions. We partner with AI, product, and engineering teams to define what quality means to users, benchmark experiences over time, and build frameworks for tracking product health.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div class="sec-head">
+        <span class="eyebrow">Contact</span>
+        <h2>Tell us what you're building</h2>
+        <p class="lede">Share a few details and we'll reply within two business days with a short plan and a time to talk.</p>
+      </div>
+      <form id="inquiry" novalidate>
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required><span class="err" id="e-name"></span></div>
+        <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err" id="e-email"></span></div>
+        <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization" required><span class="err" id="e-company"></span></div>
+        <div class="field"><label for="f-role">Your role <span class="opt">(optional)</span></label><input id="f-role" name="role" autocomplete="organization-title"></div>
+        <div class="field full"><label for="f-offer">What are you interested in?</label>
+          <select id="f-offer" name="offer">
+            <optgroup label="Offers">
+              <option>AI UX Health Check</option>
+              <option>Concept Sprint</option>
+              <option>Eval Partnership</option>
+              <option>Agent Readiness Review</option>
+              <option>Adoption Tracker</option>
+              <option>Trust &amp; Safety Review</option>
+            </optgroup>
+            <optgroup label="Lifecycle stage">
+              <option>Discovery</option>
+              <option>Model design</option>
+              <option>Testing</option>
+              <option>Production</option>
+              <option>Across the full lifecycle</option>
+            </optgroup>
+            <option>Not sure yet</option>
+          </select></div>
+        <div class="field"><label for="f-stage">Company stage</label>
+          <select id="f-stage" name="stage">
+            <option>Pre-seed / Seed</option><option>Series A–B</option><option>Series C+</option><option>Public / enterprise</option>
+          </select></div>
+        <div class="field"><label for="f-budget">Budget range</label>
+          <select id="f-budget" name="budget">
+            <option>Under $10K</option><option>$10K–$25K</option><option>$25K–$50K</option><option>$50K+</option><option>Not sure yet</option>
+          </select></div>
+        <div class="field full"><label for="f-timeline">When do you need results?</label>
+          <select id="f-timeline" name="timeline">
+            <option>Within a month</option><option>1–3 months</option><option>3+ months</option><option>Just exploring</option>
+          </select></div>
+        <div class="field full"><label for="f-msg">What's the AI product, and what decision are you trying to make?</label><textarea id="f-msg" name="message" required></textarea><span class="err" id="e-msg"></span></div>
+        <div class="form-foot">
+          <small>No mailing lists. Your details are only used to reply.</small>
+          <button class="btn btn-primary" type="submit">Send inquiry</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Human Aligned · Austin, Texas</span>
+    <span>AI alignment research for product teams</span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
